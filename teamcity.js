@@ -4,6 +4,9 @@ var HipChatClient = require('node-hipchat');
 function messageHipchat(req){
     var hipchat = new HipChatClient(config.hipchatApiKey);
 
+    if (build.buildResult == "success" && build.buildResultPrevious == "success")
+        return;
+
     var message  = prepareHipChatMessage(req.body.build.buildStatusHtml);
 	
     hipchat.postMessage(message ,function(resp, err){

@@ -36,7 +36,6 @@ function parseJiraPostBodyToHtmlMessage(jira) {
             jira.changelog.items.forEach(function (change) {
                 if (change.field == 'status') {
                     message = createStatusUpdateMessage(username, change, jira.issue);
-
                 }
             })
         }
