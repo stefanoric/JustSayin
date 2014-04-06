@@ -35,7 +35,7 @@ function parseJiraPostBodyToHtmlMessage(jira) {
         if (jira.changelog != 'undefined') {
             jira.changelog.items.forEach(function (change) {
                 if (change.field == 'status') {
-                    message = createStatusUpdateMessage(username, change, jira.issue.key);
+                    message = createStatusUpdateMessage(username, change, jira.issue);
 
                 }
             })
@@ -45,10 +45,10 @@ function parseJiraPostBodyToHtmlMessage(jira) {
     return message;
 }
 
-function createStatusUpdateMessage(username,change, issueKey){
+function createStatusUpdateMessage(username,change, issue){
     var html =
         "<strong>" + username + "</strong> changed the <strong>status</strong> of " +
-            "<a href=\"https://justgiving.atlassian.net/browse/" + issueKey + "\">" + issueKey + "</a> from " +
+            "<a href=\"https://justgiving.atlassian.net/browse/" + issue.key + "\">" + issue.key + ": \"" + issue.fields.summary + "\"</a> from " +
             "<strong>" + change.fromString + "</strong> to <strong>" + change.toString + "</strong>";
 
     return html;
