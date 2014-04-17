@@ -7,20 +7,8 @@ function messageHipchat(request){
     var payload = request.body;
     var branchName = payload.ref.replace('refs/heads/','');
     var repoName = payload.repository.name;
-    var roomId = 379365; //default of System Announcements room
-    config.teams.forEach(function (team){
-        if (branchName.toLowerCase().substring(0,team.key.length) === team.key)
-            if (team.key == 'master')
-            {
-                if (team.repo == repoName){
-                    roomId = team.roomId;
-                }
-            }
-            else
-            {
-                roomId = team.roomId;
-            }
-    })
+
+    var roomId = getRoomIdForConfig(config, branchName, repoName);
 
     var messageHtml = parseGithubJsonIntoHipChatMessageHtml(payload);
 
@@ -58,5 +46,19 @@ function parseGithubJsonIntoHipChatMessageHtml(payload){
     return html;
 }
 
+function getRoomIdForConfig(config, branchName, repoName)
+{
+    var roomId = 379365; //default of System Announcements room
+
+    config.teams.forEach(function (team){
+        if ((branchName.toLowerCase().substring(0,team.key.length) === team.key.toLowerCase()) ||
+            (team.key === '*' && team.repo == repoName))
+                roomId = team.roomId;
+    })
+
+    return roomId;
+}
+
 module.exports.messageHipchat = messageHipchat;
 module.exports.parseGithubJsonIntoHipChatMessageHtml = parseGithubJsonIntoHipChatMessageHtml;
+module.exports.getRoomIdForConfig = getRoomIdForConfig;

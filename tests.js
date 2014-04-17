@@ -20,6 +20,32 @@ describe('JustSayin',function(){
             done();
         })
 
+        it('should return system announcements roomId when key is wildcard and config repoName does not exist',function(done){
+
+            var sampleConfig = {teams: [{team: 'JG.Mobile', roomId:378395 , key:'*' }]};
+            var result = github.getRoomIdForConfig(sampleConfig,"someBranch","someRepo")
+            result.should.eql(379365);
+
+            done();
+        })
+
+        it('should return team roomId when key is wildcard and config repoName does exist',function(done){
+
+            var sampleConfig = {teams: [{team: 'JG.Mobile', roomId:378395 , key:'*',repo:'someRepo' }]};
+            var result = github.getRoomIdForConfig(sampleConfig,"someBranch","someRepo")
+            result.should.eql(378395);
+
+            done();
+        })
+
+        it('should return team roomId when key is found in branch name',function(done){
+
+            var sampleConfig = {teams: [{team: 'JG.Mobile', roomId:456 , key:'someBranch' }]};
+            var result = github.getRoomIdForConfig(sampleConfig,"someBranch")
+            result.should.eql(456);
+
+            done();
+        })
     })
 
     describe('jira',function(){
