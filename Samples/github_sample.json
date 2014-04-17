@@ -1,0 +1,110 @@
+{
+    "ref": "refs/heads/test-cleanup",
+    "after": "5df550261ab82310a10ae096d680c7f8a2e24e7b",
+    "before": "f4bb7fd29183c882b36885c8b3e7c753a87dae63",
+    "created": false,
+    "deleted": false,
+    "forced": false,
+    "compare": "https://github.com/JustGiving/Website/compare/f4bb7fd29183...5df550261ab8",
+    "commits": [
+    {
+        "id": "5df550261ab82310a10ae096d680c7f8a2e24e7b",
+        "distinct": true,
+        "message": "LR-723 fix specflow tests/tags",
+        "timestamp": "2014-03-20T17:12:33Z",
+        "url": "https://github.com/JustGiving/Website/commit/5df550261ab82310a10ae096d680c7f8a2e24e7b",
+        "author": {
+            "name": "niclaspa",
+            "email": "niclas.paulsson@hotmail.com",
+            "username": "niclaspa"
+        },
+        "committer": {
+            "name": "niclaspa",
+            "email": "niclas.paulsson@hotmail.com",
+            "username": "niclaspa"
+        },
+        "added": [
+
+        ],
+        "removed": [
+            "Website/GG.Operations.Monitor.Test.Unit/MovingAverageVariance.feature",
+            "Website/GG.Operations.Monitor.Test.Unit/MovingAverageVariance.feature.cs"
+        ],
+        "modified": [
+            "Website/GG.Operations.Monitor.Test.Unit/AggregatesByApplication.feature",
+            "Website/GG.Operations.Monitor.Test.Unit/AggregatesByApplication.feature.cs",
+            "Website/GG.Operations.Monitor.Test.Unit/Alerts.feature",
+            "Website/GG.Operations.Monitor.Test.Unit/Alerts.feature.cs",
+            "Website/GG.Operations.Monitor.Test.Unit/GG.Operations.Monitor.Test.Unit.csproj",
+            "Website/GG.Operations.Monitor.Test.Unit/Triggers.feature",
+            "Website/GG.Operations.Monitor.Test.Unit/Triggers.feature.cs",
+            "Website/GG.Operations.Monitor.Test.Unit/WebServerAggregates.feature",
+            "Website/GG.Operations.Monitor.Test.Unit/WebServerAggregates.feature.cs"
+        ]
+    }
+],
+    "head_commit": {
+    "id": "5df550261ab82310a10ae096d680c7f8a2e24e7b",
+        "distinct": true,
+        "message": "LR-723 fix specflow tests/tags",
+        "timestamp": "2014-03-20T17:12:33Z",
+        "url": "https://github.com/JustGiving/Website/commit/5df550261ab82310a10ae096d680c7f8a2e24e7b",
+        "author": {
+        "name": "niclaspa",
+            "email": "niclas.paulsson@hotmail.com",
+            "username": "niclaspa"
+    },
+    "committer": {
+        "name": "niclaspa",
+            "email": "niclas.paulsson@hotmail.com",
+            "username": "niclaspa"
+    },
+    "added": [
+
+    ],
+        "removed": [
+        "Website/GG.Operations.Monitor.Test.Unit/MovingAverageVariance.feature",
+        "Website/GG.Operations.Monitor.Test.Unit/MovingAverageVariance.feature.cs"
+    ],
+        "modified": [
+        "Website/GG.Operations.Monitor.Test.Unit/AggregatesByApplication.feature",
+        "Website/GG.Operations.Monitor.Test.Unit/AggregatesByApplication.feature.cs",
+        "Website/GG.Operations.Monitor.Test.Unit/Alerts.feature",
+        "Website/GG.Operations.Monitor.Test.Unit/Alerts.feature.cs",
+        "Website/GG.Operations.Monitor.Test.Unit/GG.Operations.Monitor.Test.Unit.csproj",
+        "Website/GG.Operations.Monitor.Test.Unit/Triggers.feature",
+        "Website/GG.Operations.Monitor.Test.Unit/Triggers.feature.cs",
+        "Website/GG.Operations.Monitor.Test.Unit/WebServerAggregates.feature",
+        "Website/GG.Operations.Monitor.Test.Unit/WebServerAggregates.feature.cs"
+    ]
+},
+    "repository": {
+    "id": 1009516,
+        "name": "Website",
+        "url": "https://github.com/JustGiving/Website",
+        "description": "Website with ExternalLibs",
+        "homepage": "",
+        "watchers": 1,
+        "stargazers": 1,
+        "forks": 3,
+        "fork": false,
+        "size": 802516,
+        "owner": {
+        "name": "JustGiving",
+            "email": null
+    },
+    "private": true,
+        "open_issues": 0,
+        "has_issues": true,
+        "has_downloads": true,
+        "has_wiki": true,
+        "language": "C#",
+        "created_at": 1287590378,
+        "pushed_at": 1395335576,
+        "master_branch": "master",
+        "organization": "JustGiving"
+},
+    "pusher": {
+    "name": "niclaspa",
+        "email": "niclas.paulsson@hotmail.com"
+}}
