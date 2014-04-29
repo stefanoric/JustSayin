@@ -5,8 +5,10 @@ function messageHipchat(req){
     var hipchat = new HipChatClient(config.hipchatApiKey);
 
     var roomId = 379365; //default of System Announcements room
+
     config.teams.forEach(function (team){
-        if (req.body.issue.key.toLowerCase().substring(0,team.key.length) === team.key)
+        var key = team.jiraKey == null ? team.key : team.jiraKey;
+        if (req.body.issue.key.toLowerCase().substring(0,key.length) === key)
             roomId = team.roomId;
     })
 

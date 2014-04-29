@@ -13,8 +13,8 @@ config.teams = [
     {team: 'Platform', roomId:150454, key:'inf'},
     //{team: 'JGTech', roomId:144926, key:'integration'},
     //{team: 'JGTech', roomId:144926, key:'rc'},
-    {team: 'JG.Mobile', roomId:378395 , key:'*', repo: 'JG.Mobile'},
-    {team: 'MovingStories', roomId:536716 , key:'*', repo: 'MovingStories'}
+    {team: 'JG.Mobile', roomId:378395, key:'*', jiraKey: 'MOB', repo: 'JG.Mobile'},
+    {team: 'MovingStories', roomId:536716, key:'*', repo: 'MovingStories'}
 ]
 
 module.exports = config;
