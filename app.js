@@ -23,8 +23,8 @@ app.post('/', function (req,res){
                 teamcity.messageHipchat(req);
                 break;
             case 'jira':
-                break;
                 jira.messageHipchat(req);
+                break;
         }
     }
     else{

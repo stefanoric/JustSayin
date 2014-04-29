@@ -8,7 +8,7 @@ function messageHipchat(req){
 
     config.teams.forEach(function (team){
         var key = team.jiraKey == null ? team.key : team.jiraKey;
-        if (req.body.issue.key.toLowerCase().substring(0,key.length) === key)
+        if (req.body.issue.key.toLowerCase().substring(0,key.length) === key.toLowerCase())
             roomId = team.roomId;
     })
 
