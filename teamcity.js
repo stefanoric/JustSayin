@@ -26,7 +26,7 @@ function prepareHipChatMessage(htmlMessage) {
             room: 144926,
             from: "JustSayin/TC",
             message: htmlMessage,
-			color: htmlMessage.indexOf('failure') != -1 ? 'red' : 'yellow'
+			color: htmlMessage.indexOf('failure') != -1 ? 'red' : 'green'
         };
 		
 	return message;
