@@ -69,10 +69,10 @@ describe('JustSayin',function(){
 			done();
 		})
 		
-		it('should create a yellow message when there is no failure', function(done){
+		it('should create a green message when there is no failure', function(done){
 			var message = 'our team city is soo awesome that we have only success';
             var result = teamcity.prepareHipChatMessage(message);
-            result.color.should.eql('yellow');
+            result.color.should.eql('green');
 			done();
 		})
 	})
