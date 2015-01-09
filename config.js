@@ -14,7 +14,7 @@ config.teams = [
     //{team: 'JGTech', roomId:144926, key:'integration'},
     //{team: 'JGTech', roomId:144926, key:'rc'},
     {team: 'JG.Mobile', roomId:378395, key:'*', jiraKey: 'MOB', repo: 'JG.Mobile'},
-    {team: 'API', roomId:723471, key:'CAPI', repo: 'X'},
+    {team: 'API', roomId:723471, key:'*', jiraKey: 'CAPI'},
     {team: 'Money4Good', roomId:862707, key:'*', jiraKey: 'PAYM' }
 ]
 
