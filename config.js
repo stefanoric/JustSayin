@@ -15,7 +15,8 @@ config.teams = [
     //{team: 'JGTech', roomId:144926, key:'rc'},
     {team: 'JG.Mobile', roomId:378395, key:'*', jiraKey: 'MOB', repo: 'JG.Mobile'},
     {team: 'API', roomId:723471, key:'*', jiraKey: 'CAPI'},
-    {team: 'Money4Good', roomId:862707, key:'*', jiraKey: 'PAYM' }
+    {team: 'Money4Good', roomId:862707, key:'*', jiraKey: 'PAYM' },
+    {team: 'FinTech MoneyIn', roomId:862707, key:'*', jiraKey: 'FMI' },
 ]
 
 module.exports = config;
